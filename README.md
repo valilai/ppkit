@@ -3,7 +3,7 @@ This is a programming kit that offers an all-in-one solution for building modern
 It's completely written in Lua to be a nvim-plugin (pkit) and also a commandline-tool (ppkit).<br/>
 It could therefore also be integrated in other IDE's (CLion, vscode, Eclipse) but because it's my private project currently only nvim and linux debian is supported.
 
-OpenSource tools: 
+OpenSource tools:<br/> 
     -Ninja: building the applications
     -CMake: generating the Ninja files
     -Conan: package manager
