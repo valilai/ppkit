@@ -7,7 +7,13 @@ OpenSource tools:
 -Ninja: building the applications
 -CMake: generating the Ninja files
 -Conan: package manager
--pkit: own core engine for managing the project
+-pkit: own (nvim) core engine for managing the project
 -cppcheck: detecting memory leaks, invalid pointer usage, buffer overflows, etc.
 -Clang static analyzer: finding bugs
 -Clang (LLVM): compiler system
+
+##Development
+This is a WIP and currently before alpha-1.0 so don't expect anything to work!
+
+##Installation
+WIP
