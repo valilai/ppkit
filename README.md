@@ -3,22 +3,21 @@ This is a programming kit that provides an all-in-one solution for creating mode
 
 > ### Disclaimer 
 > Devolping good software is like composing a symphony. To truly create beautiful music you have to know your instruments inside out. Part of a software developer's instruments are the software building tools or IDE's. The <span style="color:red;">**ppkit**</span> or <span style="color:red;">**pkit**</span> project is primarily created for me to learn how these tools work. 
->I know it's not magic, even though it looks like it is, so I decided to really dive deep into it and develop a tool for myself that would both teach me all the magic and make creating good C and Cpp applications easier and a joy. It is designed to be modular and flexible so that it grows with me and the challenges I face during my development career. I know it's not the best, maybe even the worst tool out there, but it's **mine!** Feel free to use it too.<br/>
+>I know it's not magic, even though it looks like it is, so I decided to really dive deep into it and develop a tool for myself that would both teach me all the magic and make creating good C and Cpp applications easier and a joy. It is designed to be modular and flexible so that it grows with me and the challenges I face during my development career. I know it's not the best, maybe even the worst tool out there, but it's **mine!** Feel free to use it too.
 
-Translated with DeepL.com (free version)
+Pkit is designed as a "core engine" and ppkit as a command line tool. It is written entirely in Lua to be both an Nvim plugin (pkit) and a portable command line tool (ppkit). The decision to make it with a scripting language like Lua was obvious to me, because all this tool does is call other magic tools (Ninja, Conan, Cppcheck) and create and manage files for you. Lua just won out over bash because that shit runs everywhere and integrates perfectly with my beloved nvim. So it could also be integrated into other IDE's (CLion, Vscode, Eclipse ...), but since it's my private project, only nvim and unix are supported at the moment. It is planned to add windows support later, but currently I have no use case for it.<br/>
 
-Pkit is designed 
-It's completely written in Lua to be a nvim-plugin (pkit) and also a commandline-tool (ppkit).<br/>
-It could therefore also be integrated in other IDE's (CLion, vscode, Eclipse) but because it's my private project currently only nvim and linux debian is supported.
+Ppkit uses and relies on the following open-source tools:<br/>
 
-OpenSource tools:<br/> 
-- Ninja: building the applications
-- CMake: generating the Ninja files
-- Conan: package manager
-- pkit: own (nvim) core engine for managing the project
-- cppcheck: detecting memory leaks, invalid pointer usage, buffer overflows, etc.
-- Clang static analyzer: finding bugs
-- Clang (LLVM): compiler system
+| Tool                  | Usecase                                                               |
+| --------------------- | --------------------------------------------------------------------- |
+| Ninja                 | building the applications                                             |
+| CMake                 | generating the Ninja files                                            |
+| Conan                 | package manager                                                       |
+| cppcheck              | detecting memory leaks, invalid pointer usage, buffer overflows, etc. |
+| Clang static analyzer | finding bugs                                                          |
+| Clang (LLVM)          | compiler system                                                       |
+| Pkit                  | own (nvim) core engine                                                |
 
 ## Development
 This is a WIP and currently before alpha-1.0 so don't expect anything to work!
