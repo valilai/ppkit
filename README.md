@@ -1,7 +1,7 @@
 # PrestoProgramingKit (ppkit)
 This is a programming kit that offers an all-in-one solution for building modern C and C++ applications. #NoNeedRorRust <br/>
-It's completely written in Lua to be a nvim-plugin (pkit) and also a commandline-tool (ppkit). It could be also integrated in modern IDE's.<br/>
-Because it's my private project currently only nvim and linux debian is supported.
+It's completely written in Lua to be a nvim-plugin (pkit) and also a commandline-tool (ppkit).<br/>
+It could be therefore also integrated in other modern IDE's (CLion, vscode, Eclipse) but because it's my private project currently only nvim and linux debian is supported.
 
 OpenSource tools: 
 -Ninja: building the applications
